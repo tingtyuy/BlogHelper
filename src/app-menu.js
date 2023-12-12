@@ -28,12 +28,12 @@ exports.buildContextMenu = function buildContextMenu(tray) {
                     }, {
                         label: '存稿',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.zhihu, false, 5000)
+                            appMenuPublish.publishArticleTo(tray, [string.zhihu], false, 5000)
                         }
                     }, {
                         label: '发布',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.zhihu, true, 5000)
+                            appMenuPublish.publishArticleTo(tray, [string.zhihu], true, 5000)
                         }
                     }]
                 }
@@ -123,12 +123,12 @@ exports.buildContextMenu = function buildContextMenu(tray) {
                     }, {
                         label: '存稿',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.cnblogs, false, 5000)
+                            appMenuPublish.publishArticleTo(tray, [string.cnblogs], false, 5000)
                         }
                     }, {
                         label: '发布',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.cnblogs, true, 5000)
+                            appMenuPublish.publishArticleTo(tray, [string.cnblogs], true, 5000)
                         }
                     }]
                 }

@@ -6,6 +6,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
+    "debug": "electron --inspect=5858 .",
     "dist": "rm -rf ./dist && electron-builder",
     "ico": "png-to-ico build/app.png > build/app.ico",
     "mirror": "npm config set registry https://mirrors.huaweicloud.com/repository/npm/ && npm config set electron_mirror https://mirrors.huaweicloud.com/electron/ && npm config set electron_builder_binaries_mirror https://mirrors.huaweicloud.com/electron-builder-binaries/"
@@ -18,8 +19,9 @@
   "repository": "https://github.com/onblog/BlogHelper",
   "license": "GPL-3.0-only",
   "devDependencies": {
-    "electron": "11.5.0",
+    "electron": "^11.5.0",
     "electron-builder": "^22.1.0",
+    "electron-devtools-installer": "^3.2.0",
     "png-to-ico": "^2.1.0"
   },
   "dependencies": {
