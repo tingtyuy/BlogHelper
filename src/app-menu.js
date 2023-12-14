@@ -47,12 +47,12 @@ exports.buildContextMenu = function buildContextMenu(tray) {
                     }, {
                         label: '存稿',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.jianshu, false)
+                            appMenuPublish.publishArticleTo(tray, [string.jianshu], false)
                         }
                     }, {
                         label: '发布',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.jianshu, true)
+                            appMenuPublish.publishArticleTo(tray, [string.jianshu], true)
                         }
                     }]
                 }
@@ -66,12 +66,12 @@ exports.buildContextMenu = function buildContextMenu(tray) {
                     }, {
                         label: '存稿',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.juejin, false)
+                            appMenuPublish.publishArticleTo(tray, [string.juejin], false)
                         }
                     }, {
                         label: '发布',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.juejin, true)
+                            appMenuPublish.publishArticleTo(tray, [string.juejin], true)
                         }
                     }]
                 }
@@ -85,12 +85,12 @@ exports.buildContextMenu = function buildContextMenu(tray) {
                     }, {
                         label: '存稿',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.segmentfault, false, 1000)
+                            appMenuPublish.publishArticleTo(tray, [string.segmentfault], false, 1000)
                         }
                     }, {
                         label: '发布',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.segmentfault, true, 1000)
+                            appMenuPublish.publishArticleTo(tray, [string.segmentfault], true, 1000)
                         }
                     }]
                 }
@@ -104,12 +104,12 @@ exports.buildContextMenu = function buildContextMenu(tray) {
                     }, {
                         label: '存稿',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.csdn, false, 30000)
+                            appMenuPublish.publishArticleTo(tray, [string.csdn], false, 30000)
                         }
                     }, {
                         label: '发布',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.csdn, true, 30000)
+                            appMenuPublish.publishArticleTo(tray, [string.csdn], true, 30000)
                         }
                     }]
                 }
@@ -142,12 +142,12 @@ exports.buildContextMenu = function buildContextMenu(tray) {
                     }, {
                         label: '存稿',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.oschina, false)
+                            appMenuPublish.publishArticleTo(tray, [string.oschina], false)
                         }
                     }, {
                         label: '发布',
                         click: function () {
-                            appMenuPublish.publishArticleTo(tray, string.oschina, true)
+                            appMenuPublish.publishArticleTo(tray, [string.oschina], true)
                         }
                     }]
                 }

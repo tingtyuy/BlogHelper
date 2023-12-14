@@ -64,7 +64,7 @@ function publishArticleTo(tray, sites, isPublish, sleep) {
               tray.setImage(icon.iconFile);
               if (files.length !== 1) {
                 appToast.toast({
-                  title: `预处理${files.length}个,实际处理${number}个`,
+                  title: `${site}：预处理${files.length}个,实际处理${number}个`,
                 });
               }
             }
@@ -73,7 +73,7 @@ function publishArticleTo(tray, sites, isPublish, sleep) {
         // 4.关闭进度条图标
         tray.setImage(icon.iconFile);
         appToast.toast({
-          title: `预处理${files.length}个,实际处理${number}个`,
+          title: `${site}：预处理${files.length}个,实际处理${number}个`,
         });
       }
     };
@@ -137,7 +137,7 @@ exports.uploadAllPicture = async (tray) => {
     number = i + 1;
   }
   appToast.toast({
-    title: `预处理${result.files.length}个,实际处理${number}个`,
+    title: `本地图片上传：预处理${result.files.length}个,实际处理${number}个`,
   });
   // 8.关闭进度条图标
   tray.setImage(icon.iconFile);
@@ -206,7 +206,7 @@ exports.downloadMdNetPicture = async function (tray) {
     number = i + 1;
   }
   appToast.toast({
-    title: `预处理${result.files.length}个,实际处理${number}个`,
+    title: `网络图片下载：预处理${result.files.length}个,实际处理${number}个`,
   });
   // 8.关闭进度条图标
   tray.setImage(icon.iconFile);
@@ -267,7 +267,7 @@ exports.movePictureToFolder = function (tray) {
     number = i + 1;
   }
   appToast.toast({
-    title: `预处理${result.files.length}个,实际处理${number}个`,
+    title: `文章本地图片整理：预处理${result.files.length}个,实际处理${number}个`,
   });
   // 7.关闭进度条图标
   tray.setImage(icon.iconFile);
@@ -335,7 +335,7 @@ exports.movePictureAndMdToFolder = function (tray) {
     number = i + 1;
   }
   appToast.toast({
-    title: `预处理${result.files.length}个,实际处理${number}个`,
+    title: `整理至新目录：预处理${result.files.length}个,实际处理${number}个`,
   });
   // 7.关闭进度条图标
   tray.setImage(icon.iconFile);
@@ -385,7 +385,7 @@ exports.pictureMdToImg = function (tray) {
     number = i + 1;
   }
   appToast.toast({
-    title: `预处理${result.files.length}个,实际处理${number}个`,
+    title: `Md图片转Img：预处理${result.files.length}个,实际处理${number}个`,
   });
   // 6.关闭进度条图标
   tray.setImage(icon.iconFile);
@@ -480,7 +480,7 @@ exports.HTMLToMd = function (tray) {
     number = i + 1;
   }
   appToast.toast({
-    title: `预处理${result.files.length}个,实际处理${number}个`,
+    title: `HTML转Md：预处理${result.files.length}个,实际处理${number}个`,
   });
   // 6.关闭进度条图标
   tray.setImage(icon.iconFile);
@@ -514,7 +514,7 @@ exports.ManyMdToOne = function (tray) {
     number = i + 1;
   }
   appToast.toast({
-    title: `预处理${result.files.length}个,实际处理${number}个`,
+    title: `合并Md文件：预处理${result.files.length}个,实际处理${number}个`,
   });
   // 6.关闭进度条图标
   tray.setImage(icon.iconFile);

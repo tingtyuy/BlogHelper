@@ -210,7 +210,7 @@ function createArticleToJueJin(title, markdown, html, isPublish) {
             "link_url": "",
             "cover_image": "",
             "title": title,
-            "brief_content": "",
+            "brief_content": "风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等",
             "edit_type": 10,
             "html_content": "deprecated",
             "mark_content": markdown
