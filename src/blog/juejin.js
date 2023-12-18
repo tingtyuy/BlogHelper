@@ -5,7 +5,7 @@ const querystring = require('querystring');
 const zlib = require('zlib');
 const FormData = require('form-data');
 const fs = require('fs');
-
+const appUtil = require("../common/app-util");
 //上传图片到掘金
 function uploadPictureToJueJin(filePath) {
     return new Promise((resolve, reject) => {
@@ -210,7 +210,7 @@ function createArticleToJueJin(title, markdown, html, isPublish) {
             "link_url": "",
             "cover_image": "",
             "title": title,
-            "brief_content": "风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等风等等",
+            "brief_content": appUtil.getArticeBrief(html,100),
             "edit_type": 10,
             "html_content": "deprecated",
             "mark_content": markdown
